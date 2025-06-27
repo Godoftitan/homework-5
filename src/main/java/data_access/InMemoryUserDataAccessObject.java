@@ -42,7 +42,12 @@ public class InMemoryUserDataAccessObject implements SignupUserDataAccessInterfa
     }
 
     @Override
+    public String getCurrentUser() {
+        return currentUser;
+    }
+
+    @Override
     public void setCurrentUser(String name) {
-        currentUser = name;
+        this.currentUser = name;
     }
 }
